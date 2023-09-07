@@ -1,0 +1,71 @@
+super + d 
+	dmenu_run
+
+super + w
+	firefox	
+
+super + f
+	st -e lfrun
+	
+super + e
+	st -e nvim
+	
+super + H
+	st -e htop
+
+super + t
+	telegram-desktop
+
+super + equal
+	amixer set Master 4dB+
+
+super + minus
+	amixer set Master 4dB-
+
+#super {equal, minus, BackSpace}
+$	~/volume.sh {up, down, toggle}
+
+super + s
+	sioyek
+
+ctrl + Print
+	~/scripts/Fscreenshot.sh
+#	maim | xclip -selection clipboard -t image/png
+#   maim -u -i $(xdotool getactivewindow)| xclip -selection clipboard -t image/png
+
+super + v
+	sxiv -b ~/Photos/screenshots/last_screenshot.png
+
+Print
+	~/scripts/S_screenshot.sh
+
+super + z
+	zathura
+
+super + E
+	Exit.sh
+
+super + p
+	mpv $(xclip -o)
+
+super + P
+	mpv --vid=no $(xclip -o)
+	
+super + ctrl + p
+	pkill mpv
+
+super + Y
+	st -e mpv --vid=no https://www.youtube.com/watch?v=ddaSl1Vg-FA&t=13s&pp=ygU92YTYtNmK2K4g2YXYtNin2LHZiiDYsdin2LTYryDYp9mE2LnZgdin2LPZiiDYs9mI2LHYqSDZitmI2LPZgQ%3D%3D
+
+super + T
+	st -e tty-clock -tbc
+
+super + ctrl + w
+	surf duckduckgo.com
+
+super + W 
+	surf https://translate.google.com/?sl=en&tl=ar&text=hello%20world%0A&op=translate
+
+super + D
+	 cd /home/hamid/videos/AutoD && youtube-dl $(xclip -o)
+
